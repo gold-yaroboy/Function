@@ -3,7 +3,7 @@ using namespace std;
 using std::cout;
 using std::cin;
 using std::endl;
-
+//Function
 int Sum(int a, int b); //Прототип
 int Difference(int a, int b);
 int Product(int a, int b);

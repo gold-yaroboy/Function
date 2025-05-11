@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fuctions", "Fuctions\Fuctions.vcxproj", "{64570EBC-EA59-4079-BEB2-BC51E46866DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions", "Fuctions\Fuctions.vcxproj", "{64570EBC-EA59-4079-BEB2-BC51E46866DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Try_fun", "Try_fun\Try_fun.vcxproj", "{CA4ABBB9-18C1-4D40-9256-046956D9C920}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{64570EBC-EA59-4079-BEB2-BC51E46866DA}.Release|x64.Build.0 = Release|x64
 		{64570EBC-EA59-4079-BEB2-BC51E46866DA}.Release|x86.ActiveCfg = Release|Win32
 		{64570EBC-EA59-4079-BEB2-BC51E46866DA}.Release|x86.Build.0 = Release|Win32
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Debug|x64.ActiveCfg = Debug|x64
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Debug|x64.Build.0 = Debug|x64
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Debug|x86.Build.0 = Debug|Win32
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Release|x64.ActiveCfg = Release|x64
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Release|x64.Build.0 = Release|x64
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Release|x86.ActiveCfg = Release|Win32
+		{CA4ABBB9-18C1-4D40-9256-046956D9C920}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

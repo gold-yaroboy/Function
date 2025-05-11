@@ -5,9 +5,9 @@ using std::cin;
 using std::endl;
 //Function
 int Sum(int a, int b); //Прототип
-int Difference(int a, int b);
-int Product(int a, int b);
-double Quotient(int a, int b);
+int Difference(int a, int b); //Прототип
+int Product(int a, int b); //Прототип
+double Quotient(int a, int b); //Прототип
 
 void main()
 {
@@ -25,15 +25,15 @@ int Sum(int a, int b) //Реализация
 {
 	return a + b;
 }
-int Difference(int a, int b)
+int Difference(int a, int b) //Реализация
 {
 	return a - b;
 }
-int Product(int a, int b)
+int Product(int a, int b) //Реализация
 {
 	return a * b;
 }
-double Quotient(int a, int b)
+double Quotient(int a, int b) //Реализация
 {
 	return (double)a / b;
 }

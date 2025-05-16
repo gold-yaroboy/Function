@@ -16,7 +16,6 @@ void main()
 	cout << a << "!" << " = " << Factorial(a)/*Вызов*/ << endl;
 	cout << b << " в степени " << c << " = " << Degree(b, c) << endl;
 }
-
 int Factorial(int a) //Реализация
 {
 	int temp = 1;

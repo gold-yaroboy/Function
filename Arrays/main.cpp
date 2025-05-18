@@ -3,15 +3,20 @@ using namespace std;
 using std::cout;
 using std::cin;
 using std::endl;
-
+//lesson
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
-
 void Print(int arr[], const int n);
 void Print(double arr[], const int n);
-
 void Sort(int arr[], const int n);
 void Sort(double arr[], const int n);
+//home
+void Sum(int arr[], const int n);
+void Avg(int arr[], const int n);
+void MinValueIn(int arr[], const int arr_size);
+void MaxValueIn(int arr[], const int arr_size);
+void ShiftLeft(int arr[], const int arr_size);
+void ShiftRight(int arr[], const int arr_size);
 
 void main()
 {
@@ -23,7 +28,14 @@ void main()
 	Print(arr, n);
 	Sort(arr, n);
 	Print(arr, n);
-	
+	//home
+	Sum(arr, n);
+	Avg(arr, n);
+	MinValueIn(arr, n);
+	MaxValueIn(arr, n);
+	ShiftLeft(arr, n);
+	ShiftRight(arr, n);
+
 	const int SIZE = 8;
 	double brr[SIZE];
 	FillRand(brr, SIZE);
@@ -31,7 +43,7 @@ void main()
 	Sort(brr, SIZE);
 	Print(brr, SIZE);
 }
-
+//lesson
 void FillRand(int arr[], const int n, int minRand, int maxRand)
 {
 	for (int i = 0; i < n; i++)
@@ -95,5 +107,67 @@ void Sort(double arr[], const int n)
 				arr[j] = buffer;
 			}
 		}
+	}
+}
+
+//home
+void Sum(int arr[], const int arr_size)
+{
+	int Sum = 0;
+	for (int i = 0; i < arr_size; i++)Sum += arr[i];
+	cout << Sum << endl;
+}
+
+void Avg(int arr[], const int arr_size)
+{
+	int Sum = 0;
+	for (int i = 0; i < arr_size; i++)Sum += arr[i];
+	cout << (double)Sum/arr_size << endl;
+}
+
+void MinValueIn(int arr[], const int arr_size)
+{
+	int min = arr[0];
+	for (int i = 0; i < arr_size; i++)
+	{
+		if (arr[i] < min)min = arr[i];
+	}
+	cout <<  min << endl;
+}
+
+void MaxValueIn(int arr[], const int arr_size)
+{
+	int max = arr[0];
+	for (int i = 0; i < arr_size; i++)
+	{
+		if (arr[i] > max)max = arr[i];
+	}
+	cout <<  max << endl;
+}
+
+void ShiftLeft(int arr[], const int arr_size)
+{
+	int temp;
+	for (int i = 0; i < arr_size; i++)
+	{
+		temp = arr[arr_size - 1];
+		for (int i = arr_size - 1; i > 0; i--)arr[i] = arr[i - 1];
+		arr[0] = temp;
+		for (int i = 0; i < arr_size; i++)cout << arr[i] << "\t";
+		cout << endl;
+	}
+	cout << endl;
+}
+
+void ShiftRight(int arr[], const int arr_size)
+{
+	for (int j = 0; j < arr_size; j++)
+	{
+		int buf;
+		buf = arr[0];
+		for (int i = 1; i < arr_size; i++) arr[i - 1] = arr[i];
+		arr[arr_size - 1] = buf;
+		for (int i = 0; i < arr_size; i++)cout << arr[i] << "\t";
+		cout << endl;
 	}
 }

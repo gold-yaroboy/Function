@@ -7,7 +7,7 @@ using std::endl;
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(float arr[], const int n, int minRand = 0, int maxRand = 100);
-void FillRand(char arr[], const int n, int minRand = 0, int maxRand = 100);
+void FillRand(char arr[], const int n, int minRand = 40, int maxRand = 256);
 
 void Print(int arr[], const int n);
 void Print(double arr[], const int n);
@@ -95,7 +95,7 @@ void main()
 	ShiftRight(crr, size);
 	cout << "--------------------" << endl;
 	const int Size = 10;
-	char drr[size];
+	char drr[Size];
 	FillRand(drr, Size);
 	Print(drr, Size);
 	Sort(drr, Size);
@@ -137,12 +137,9 @@ void FillRand(float arr[], const int n, int minRand, int maxRand)
 }
 void FillRand(char arr[], const int n, int minRand, int maxRand)
 {
-	char(minRand *= 100);
-	char(maxRand *= 100);
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
-		arr[i] /= 100;
 	}
 }
 
@@ -232,7 +229,7 @@ void Sort(char arr[], const int n)
 		{
 			if (arr[j] < arr[i])
 			{
-				float buffer = arr[i];
+				char buffer = arr[i];
 				arr[i] = arr[j];
 				arr[j] = buffer;
 			}

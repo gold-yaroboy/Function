@@ -18,8 +18,12 @@ void Sort(int arr[], const int n);
 void Sort(double arr[], const int n);
 void Sort(float arr[], const int n);
 void Sort(char arr[], const int n);
+
+int Sum(int arr[], const int n);
+
 //home
-void Sum(int arr[], const int n);
+
+//void Sum(int arr[], const int n);
 void Sum(double arr[], const int n);
 void Sum(float arr[], const int n);
 void Sum(char arr[], const int n);
@@ -59,6 +63,7 @@ void main()
 	Print(arr, n);
 	Sort(arr, n);
 	Print(arr, n);
+	cout << "Сумма элементов массива " << Sum(arr, n) << endl;
 	//home
 	Sum(arr, n);
 	Avg(arr, n);
@@ -238,12 +243,12 @@ void Sort(char arr[], const int n)
 }
 
 //home
-void Sum(int arr[], const int arr_size)
+/*void Sum(int arr[], const int arr_size)
 {
 	int Sum = 0;
 	for (int i = 0; i < arr_size; i++)Sum += arr[i];
 	cout << Sum << endl;
-}
+}*/
 void Sum(double arr[], const int arr_size)
 {
 	double Sum = 0;
@@ -463,4 +468,16 @@ void ShiftRight(char arr[], const int arr_size)
 		for (int i = 0; i < arr_size; i++)cout << arr[i] << "\t";
 		cout << endl;
 	}
+}
+
+//lesson
+
+int Sum(int arr[], const int n)
+{
+	int sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
 }
